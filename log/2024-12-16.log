@@ -1,0 +1,405 @@
+2024-12-16 15:04:35,502 - ERROR - 主程式執行時發生錯誤: 'Files'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 54, in main
+    excel_a_path = config["Files"]["excel_a_path"]
+                   ~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 979, in __getitem__
+    raise KeyError(key)
+KeyError: 'Files'
+2024-12-16 15:04:46,468 - ERROR - 主程式執行時發生錯誤: 'Files'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 54, in main
+    excel_a_path = config["Files"]["excel_a_path"]
+                   ~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 979, in __getitem__
+    raise KeyError(key)
+KeyError: 'Files'
+2024-12-16 15:08:51,808 - ERROR - 主程式執行時發生錯誤: 'Files'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 54, in main
+    excel_a_path = config["Files"]["excel_a_path"]
+                   ~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\configparser.py", line 979, in __getitem__
+    raise KeyError(key)
+KeyError: 'Files'
+2024-12-16 15:19:19,847 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'item_name (中文)' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+2024-12-16 15:22:10,322 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'item_name (中文)' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+2024-12-16 15:24:04,843 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'item_name (中文)' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+2024-12-16 15:26:02,557 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['test'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'test' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\mapping_id_name.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['test'] (sheet: Snacks)
+2024-12-16 15:30:04,906 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['test'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'test' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['test'] (sheet: Snacks)
+2024-12-16 15:37:04,698 - ERROR - 讀取 Excel 文件失敗: input_Excel/Product_CHT_ENG_Reference.xlsx, 錯誤: Worksheet named 'CP_Snacks' not found
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 773, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_openpyxl.py", line 582, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 624, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'CP_Snacks' not found
+2024-12-16 15:38:46,829 - ERROR - 讀取 Excel 文件失敗: input_Excel/Product_CHT_ENG_Reference.xlsx, 錯誤: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
+2024-12-16 15:38:46,863 - ERROR - 讀取 Excel 文件失敗: input_Excel/Product_CHT_ENG_Reference.xlsx, 錯誤: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
+2024-12-16 15:39:45,797 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'item_name (中文)' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+2024-12-16 15:41:47,860 - ERROR - 讀取 Excel 文件失敗: input_Excel/comparison.xlsx, 錯誤: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+Traceback (most recent call last):
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 607, in _handle_usecols
+    col_indices.append(usecols_key.index(col))
+                       ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'item_name (中文)' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 916, in parse
+    raise err
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 878, in parse
+    parser = TextParser(
+             ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 2053, in TextParser
+    return TextFileReader(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 133, in __init__
+    ) = self._infer_columns()
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 542, in _infer_columns
+    columns = self._handle_usecols(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\python_parser.py", line 609, in _handle_usecols
+    self._validate_usecols_names(self.usecols, usecols_key)
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\parsers\base_parser.py", line 979, in _validate_usecols_names
+    raise ValueError(
+ValueError: Usecols do not match columns, columns expected but not found: ['item_name (中文)'] (sheet: Snacks)
+2024-12-16 15:44:26,579 - ERROR - 讀取 Excel 文件失敗: input_Excel/Product_CHT_ENG_Reference.xlsx, 錯誤: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\p10414005\Desktop\Work\Tool\mapping_id_name\test.py", line 40, in read_excel_data
+    data = pd.read_excel(file_path, sheet_name=sheet_name, usecols=columns_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\p10414005\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'input_Excel/Product_CHT_ENG_Reference.xlsx'
